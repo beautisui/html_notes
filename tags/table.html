@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <title>Table</title>
+  <style>
+    table {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Table of normal Data</h1>
+  <h1>Table of Normal Data</h1>
 
-  <table style="border: 2px solid black;">
+  <table>
     <thead>
       <tr>
         <th>Name</th>
@@ -21,7 +54,7 @@
       <tr>
         <td>Beauti</td>
         <td>19</td>
-        <td>Beanglore</td>
+        <td>Bangalore</td>
       </tr>
       <tr>
         <td>Sweety</td>
@@ -29,20 +62,21 @@
         <td>Jhargram</td>
       </tr>
     </tbody>
-
   </table>
 
   <h1>Table of Pictures</h1>
+
   <table>
     <tr>
       <td>
         <img width="250" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" />
-      <td>
-        <img width="250" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" />
       </td>
       <td>
         <img width="250" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" />
       </td>
+      <td>
+        <img width="250" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" />
+      </td>
     </tr>
     <tr>
       <td style="font-weight: 700;">Lily</td>
@@ -62,24 +96,18 @@
         <img height="230" src="https://i.pinimg.com/550x/bc/f0/27/bcf0272b061414169e8d2e21659223c7.jpg"
           alt="flower Picture" />
       </td>
+    </tr>
     <tr>
       <td style="font-weight: 700;">Ninja Hatori</td>
       <td style="font-weight: 700;">Ninja Hatori</td>
       <td style="font-weight: 700;">Ninja Hatori</td>
-    </tr>
     </tr>
   </table>
 
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
-
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
+  <nav>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" class="nav-link">MDN Docs</a>
+  </nav>
 </body>
 
 </html>

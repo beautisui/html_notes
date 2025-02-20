@@ -4,23 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Details</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
   <h3>What is details in HTML?</h3>
-  <pre style="font-family: Arial, sans-serif;"></prestyle>
-    The tag in HTML is used to create a collapsible section that
+
+  <p> The Details tag in HTML is used to create a collapsible section that
     the user can toggle open or closed.
     It's useful for FAQs, hidden information, and sections
     that don't need to be visible all the time.
-
-for Example :-
-  </pre>
+    For Example:-
+  </p>
 
   <details>
     <summary>Picture</summary>
-    <img width="300px" ; height="300px" src="https://www.scaler.com/topics/images/details-tag-in-html-thumbnail.webp" />
+    <img src="https://www.scaler.com/topics/images/details-tag-in-html-thumbnail.webp" />
   </details>
 
   <details>
@@ -28,17 +58,10 @@ for Example :-
     <embed src="https://www.youtube.com/embed/4NAUHt8gebo?si=kSO1KWqAWX1uTEkx">
   </details>
 
-
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
-
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">MDN Docs</a>
+  </nav>
 
 </body>
 

@@ -5,24 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Images</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    img {
+      width: 200px;
+      max-width: 100%;
+      margin: 20px auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
+
   <h1>Displaying an Image Using a URL in HTML</h1>
-  <img width="200"
+
+  <img
     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1920px-HTML5_logo_and_wordmark.svg.png"
-    alt="HTML5_logo">
+    alt="HTML5 logo">
 
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">MDN Docs</a>
+  </nav>
 
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
 </body>
 
 </html>

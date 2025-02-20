@@ -4,31 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pre</title>
+  <title>Preformatted Text</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    p,
+    pre {
+      font-size: 20px;
+      text-align: left;
+      display: inline-block;
+      max-width: 600px;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
-    <h1>Paragraph Tag:</h1>
-    <p style="font-size: 20px;">
-      Used to define a paragraph of text.Ignores extra spaces, newlines, and tabs.
-      . o ..
-      o . o o.o
-      ...oo
-      __[]__
-      __|_o_o_o\__
-      \""""""""""/
-      \. .. . /
-      ^^^^^^^^^^^^^^^^^^^^
-    </p>
-  </div>
 
-  <div>
-    <h1>Preformatted Text Tag:</h1>
-    <pre style="font-size: 20px;">
-     Preserves all spaces, newlines, and tabs exactly as written.
-    
-    
+  <h1>Paragraph Tag:</h1>
+  <p>
+    Used to define a paragraph of text. It ignores extra spaces, newlines, and tabs.
+    . o ..
+    o . o o.o
+    ...oo
+    __[]__
+    __|_o_o_o\__
+    \""""""""""/
+    \. .. . /
+    ^^^^^^^^^^^^^^^^^^^^
+  <p>tag **won't** be displayed correctly.</p>
+
+  <h1>Preformatted Text Tag:</h1>
+  <pre>Preserves all spaces, newlines, and tabs exactly as written.
+
     .  o ..                  
     o . o o.o                
          ...oo               
@@ -38,18 +76,12 @@
          \. ..  . /          
     ^^^^^^^^^^^^^^^^^^^^ 
   </pre>
-  </div>
 
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">MDN Docs</a>
+  </nav>
 
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
 </body>
 
 </html>

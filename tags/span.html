@@ -4,40 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Span </title>
+  <title>Span Tag</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    .green-text {
+      color: green;
+      font-weight: bold;
+    }
+
+    .box {
+      border: 1px solid black;
+    }
+
+    .box-padding {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .box-margin {
+      border: 1px solid black;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
-  <p style="font-size: 20px;font-weight: bold;">
-    The <span> tag in HTML is an inline container used to apply styles, scripts, or manipulate specific parts of text
-      without affecting the whole block
+
+  <p>
+    The &lt; span &gt; tag in HTML is an inline container used to apply styles, scripts, or manipulate specific parts of
+    text
+    without affecting the whole block.</span>
   </p>
 
   <div>
-    <p style="font-size: 30px;">This is a <span style="color: green; font-weight: bold;"> Green color </span> text</p>
-
-    <p style="font-size: 30px;">This is a <span style="color: green; font-weight: bold;"> Green color </span> text with
-      <span style="	border: 1px solid black;"> BOX</span>
+    <p>This is a <span class="green-text">Green color</span> text</p>
+    <p>This is a <span class="green-text">Green color
+      </span> text with<span class="box">BOX</span>
     </p>
 
-    <p style="font-size: 30px;">This is a <span style="color: green; font-weight: bold;"> Green color </span> text with
-      <span style="	border: 1px solid black;padding: 5px;"> BOX With Padding</span>
+    <p>This is a <span class="green-text">Green color</span> text with
+      <span class="box-padding">BOX With Padding</span>
+    </p>
 
-    <p style="font-size: 30px;">This is a <span style="color: green; font-weight: bold;"> Green color </span> text with
-      <span style="	border: 1px solid black;margin: 5px;"> BOX With Marin</span>
+    <p>This is a <span class="green-text">Green color</span> text with
+      <span class="box-margin">BOX With Margin</span>
     </p>
   </div>
 
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
+  <nav class="nav">
+    <a href="../index.html">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">MDN Docs</a>
+  </nav>
 
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
 </body>
 
 </html>

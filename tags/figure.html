@@ -4,38 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figure and figcaption</title>
+  <title>Figure and Figcaption</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    figure {
+      display: inline-block;
+      border-radius: 8px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    figcaption {
+      font-size: 18px;
+      color: #555;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 24px;
+      color: #444;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>Displaying Images Without Figure and Figcaption</h1>
   <div>
-    <h1>Displaying Images Without Figure and Figcaption</h1>
     <img width="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrK_RlgJ6Ij5ToBjWCtdPzTlN4jMHZEr6NAg&s"
       alt="Flower">
   </div>
 
+  <h1>Displaying Images Using Figure and Figcaption</h1>
   <div>
     <figure>
-      <h1>Displaying Images Using Figure and Figcaption</h1>
       <img width="400"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrK_RlgJ6Ij5ToBjWCtdPzTlN4jMHZEr6NAg&s"
         alt="Flower image">
-      <figcaption style="font-size: 20px;"><i><b>Clicked by xyz</b></i></figcaption>
+      <figcaption>Clicked by XYZ</figcaption>
     </figure>
-    <p style="font-size: 40px;">By using figure and figcaption you can give the details of the picture but normally you
-      can't.</p>
+    <p>By using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>, you can provide details of the picture,
+      but normally you can't.</p>
   </div>
 
-  <div style="display: flex; justify-content: space-between; background-color: white; padding: 10px;">
-
-    <a href="../index.html"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">Home</a>
-
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
-      style="color: white; font-size: 20px; padding: 10px; border: 2px solid black; text-align: center; text-decoration: none; background-color: black;">
-      MDN Docs
-    </a>
-  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">MDN Docs</a>
+  </nav>
 </body>
 
 </html>
